@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <script src="js/script.js"></script>
+
+    <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Online Courses</a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#course">Courses</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="login" class="fas fa-user-circle"></div>
+            <div id="login-drop-down-menu" class="login-drop-down-menu">
+                <ul>
+                    <li id="open_account_page"><a href="/OnlineCourses/account.html">Account</a></li>
+                    <li id="logout"><a href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!--__________-__________-__________-__________-Login Form-__________-__________-__________-__________-->
+
+    <div id="login-form" class="login-form">
+
+        <form>
+
+            <h3>Log IN</h3>
+
+            <div class="box-container">
+                <i class="fas fa-envelope"></i>
+                <input id="login-email" name="login-email" type="email" class="box" placeholder="email id" required />
+            </div>
+
+            <div class="box-container">
+                <i class="fas fa-key"></i>
+                <input id="login-password" name="login-password" type="password" class="box" placeholder="password"
+                    required>
+                <div><i id="login-eye" class="fas fa-eye-slash"></i></div>
+            </div>
+
+            <p id="login-form-check-statement" class="login-form-check-statement"></p>
+            <p>forget password? <a>click here</a></p>
+            <p>don't have an account? <a id="open-registration-form">register now</a></p>
+
+            <input id="login-submit-btn" type="button" class="btn" value="Log IN">
+
+            <i id="close-login-form" class="fas fa-times"></i>
+
+        </form>
+
+    </div>
+
+    <!--__________-__________-__________-__________-Registration Form-__________-__________-__________-__________-->
+
+    <div id="registration-form" class="registration-form">
+
+        <form>
+
+            <h3>Register</h3>
+
+            <div class="box-container">
+                <i class="fas fa-envelope"></i>
+                <input id="registration-email" name="registration_email" type="email" class="box" placeholder="email id"
+                    required>
+                <div><i id="registration-email-check" class="fas"></i></div>
+            </div>
+
+            <div class="box-container">
+                <i class="fas fa-key"></i>
+                <input id="registration-password" name="registration_password" type="password" class="box"
+                    placeholder="password" required>
+                <div><i id="registration-eye" class="fas fa-eye-slash"></i></div>
+            </div>
+
+            <p id="email-strength-check" class="email-strength-check"></p>
+            <p id="password-strength-check" class="password-strength-check">
+                Password should contain atleast 6 characters with atleat 1 of each uppercase, lowercase, numbers &
+                special characters
+            </p>
+            <p>already a customer? <a id="open-login-form">log in</a></p>
+
+            <input id="registration-submit-btn" type="button" class="btn disabled" value="register"
+                disabled="disabled" />
+
+            <i id="close-registration-form" class="fas fa-times"></i>
+
+        </form>
+
+    </div>
+
+    <!--__________-__________-__________-__________-Home-__________-__________-__________-__________-->
+
+    <section id="home" class="home">
+
+        <h1>Online Course</h1>
+
+        <p></p>
+
+        <a href="#course"><button class="btn">Get Started</button></a>
+
+    </section>
+
+    <!--__________-__________-__________-__________-Course-__________-__________-__________-__________-->
+
+    <section class="course" id="course">
+
+        <h1 class="heading">Course Heading</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="/OnlineCourses/images/HTML.png" alt="HTML.png" />
+                <h3 class="price">₹ 500</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="/OnlineCourses/enroll_html.html" class="title" target="_blank">
+                        <h1>HTML</h1>
+                    </a>
+                    <p>Introduction to HTML</p>
+                    <div class="info">
+                        <h3><i class="far fa-clock"></i>daily duration - 10hr</h3>
+                        <h3><i class="far fa-calendar-alt"></i>total duration - 4weeks</h3>
+                        <h3><i class="fas fa-book"></i>no. of topics - 10</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/OnlineCourses/images/CSS.jpg" alt="CSS.jpg" />
+                <h3 class="price">₹ 1000</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="/OnlineCourses/course_css.html" class="title" target="_blank">
+                        <h1>CSS</h1>
+                    </a>
+                    <p>Style with CSS</p>
+                    <div class="info">
+                        <h3><i class="far fa-clock"></i>daily duration - 10hr</h3>
+                        <h3><i class="far fa-calendar-alt"></i>total duration - 4weeks</h3>
+                        <h3><i class="fas fa-book"></i>no. of topics - 10</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/OnlineCourses/images/JS.jpg" alt="JS.jpg" />
+                <h3 class="price">₹ 4000</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="/OnlineCourses/course_js.html" class="title" target="_blank">
+                        <h1>JS</h1>
+                    </a>
+                    <p>JavaScript</p>
+                    <div class="info">
+                        <h3><i class="far fa-clock"></i>daily duration - 10hr</h3>
+                        <h3><i class="far fa-calendar-alt"></i>total duration - 4weeks</h3>
+                        <h3><i class="fas fa-book"></i>no. of topics - 20</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--__________-__________-__________-__________-Footer-__________-__________-__________-__________-->
+
+    <div class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#course">course</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p>
+                    <a href="http://maps.google.com?q=23.2172684,77.4069145" target="_blank"><i
+                            class="fas fa-map-marker-alt"></i> india, india 000000.</a>
+                </p>
+                <p>
+                    <a href="mailto:example@example.com"><i class="fas fa-envelope"></i> example@example.com</a>
+                </p>
+                <p>
+                    <a href="tel:+000000000000"><i class="fas fa-phone"></i> (+91) 000 000 0000</a>
+                </p>
+            </div>
+        </div>
+
+        <h1 class="credit">
+            created by <a href="#">Adarsh Choutha</a>.
+        </h1>
+
+    </div>
+
+</body>
+
+</html>
